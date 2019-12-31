@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="slider.css">
+    
+
+</head>
+
+
+<body>
+    
+    <center>
+        <div style="display: table">
+            <div class="arrow">
+                <img src="img/arrowl.png" width="50px" alt="" onclick="findind(1)">
+            </div>
+            <div class="slideall" id="ss" style="display:table-cell ;">
+                <center>
+                    <div class="slide slide1 ">
+
+
+                        <img class="picture" src="img/pic1.jpg" width="350px" style="float: right;">
+                    </div>
+                    <div class="slide slide2">
+                        <img class="picture cur" src="img/pic2.jpg" width="350px">
+                    </div>
+                    <div class="slide slide3">
+
+                        <img class="picture" src="img/pic3.jpg" width="350px">
+
+                    </div>
+                </center>
+            </div>
+            <div class="arrow">
+                <img src="img/arrow.png" width="50px" alt="" onclick="findind(2)">
+            </div>
+        </div style="display: table">
+
+        <div class="row " id="alldot">
+
+            <div class="dot" id="dot" onclick="fade(0)">
+            </div>
+            <div class="dot" id="dot" onclick="fade(1)">
+            </div>
+            <div class="dot" id="dot" onclick="fade(2)">
+            </div>
+            <div class="dot" id="dot" onclick="fade(3)">
+            </div>
+
+        </div>
+
+    </center>
+    
+    <script src="slide.js"></script>
+</body>
+
+</html>
