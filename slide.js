@@ -3,7 +3,6 @@ var picadd = ["img/pic1.jpg", "img/pic2.jpg", "img/pic3.jpg", "img/pic4.jpg"];
 //funtion find index of current picture
 
 function findInd(x) {
-  console.log("1");
 
   var current = document.getElementsByClassName("cur")[0].src;
   var curstr = current.split("/");
@@ -23,7 +22,6 @@ function findInd(x) {
     }
   }
 
-  console.log(ind);
 }
 
 //function fade
@@ -51,9 +49,7 @@ function pics(n) {
     }
   }
   if (picadd.length >= 3) {
-    console.log("check");
     if (n != picadd.length - 1 && n != 0) {
-      console.log(picadd[n]);
 
       pict[0].src = picadd[n - 1];
       pict[1].src = picadd[n];
